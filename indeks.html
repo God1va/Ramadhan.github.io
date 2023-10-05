@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramadhan Project</title>
+    <title>Test hover</title>
+<head>
+    <style>
+body {
+    background-color: #0c0e24; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+li {
+    width: 200px; 
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: #2d3a72; 
+    color: #fff; 
+    transform: translateX(0) translateY(0); 
+}
+
+
+li:hover {
+    transform: translateX(10px) translateY(0px);
+    background-color: #bb00ff; 
+    color: #0c0b0b;
+    cursor: pointer;
+    
+}
+
+
+li a {
+    text-decoration: none;
+    color: #fff; 
+    margin-left: 10px;
+}
+
+
+    </style>
 </head>
 <body>
-    <h1>Testt</h1>
+    
+<ul>
+    <li>
+        <a href="#">*<i>test hover</i></a>
+    </li>
+    <li style="--1:6;" data-icon="&#xf015">
+        <a href="#">Home</a>
+    </li>
+    <li style="--1:5;" data-icon="&#xf2bb">
+        <a href="#">About</a>
+    </li>
+    <li style="--1:4;" data-icon="&#xf03a">
+        <a href="#">Service</a>
+    </li>
+    <li style="--1:3;" data-icon="&#xf07c">
+        <a href="#">Portofolio</a>
+    </li>
+    <li style="--1:2;" data-icon="&#xf533">
+        <a href="#">Our Team</a>
+    </li>
+    <li style="--1:1;" data-icon="&#x40">
+        <a href="#">Contact</a>
+    </li>
+
+</ul>
 </body>
 </html>
